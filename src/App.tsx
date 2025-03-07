@@ -1,9 +1,33 @@
-import { useState } from 'react'
+/*import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import viteLogo from '/vite.svg'*/
 import './App.css'
+import React from 'react'
+import Navbar from './components/Navbar'
+import { BrowserRouter as Router, Route,Routes} from 'react-router-dom'
+import Home from './components/Home'
+import About from './components/About'
 
-function App() {
+
+const App: React.FC = () =>{
+  console.log('Rendering App Component');
+  return(
+    <Router>
+      <div className='App'>
+        <Navbar />
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
+    </Router>
+    
+  );
+}
+
+export default App;
+
+/*function App() {
   const [count, setCount] = useState(0)
 
   return (
@@ -29,7 +53,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
-  )
-}
+  
+}*/
 
-export default App
+

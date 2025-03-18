@@ -38,6 +38,9 @@ function Navbar() {
 
                     <NavLink to='/about' onClick={closeMenu}>
                     A propos</NavLink>
+
+                    <NavLink to='/connexion' onClick={closeMenu}>
+                    Connexion</NavLink>
                 </div>
             
         </div>

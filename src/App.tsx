@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route,Routes} from 'react-router-dom'
 import Home from './components/Home'
 import About from './components/About'
 import Connexion from './components/Connexion'
+import Results from './components/Results'
 
 
 const App: React.FC = () =>{
@@ -20,6 +21,7 @@ const App: React.FC = () =>{
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/connexion" element={<Connexion />} />
+        <Route path="/results" element={<Results />} />
         </Routes>
       </div>
     </Router>

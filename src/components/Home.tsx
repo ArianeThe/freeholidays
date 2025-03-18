@@ -1,13 +1,14 @@
 import React from 'react';
+import Search from './Search';
 import '../assets/css/Home.css'
 
 const Home: React.FC = () => {
     console.log('Rendering Home component');
   return (
     <div className='home'>
-      <h2 className='title'>Free Holidays</h2>
+      <h2 className='title'>Bienvenu-e </h2>
 
-barre de recherche
+<Search/>
 
       <p className='texte'>Bienvenu-e sur LE site qui te permettre de trouver la location pour tes vacances, sans avoir à te soucier des détails.
       </p>

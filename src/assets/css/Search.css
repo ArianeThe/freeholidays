@@ -1,0 +1,35 @@
+.search {
+    margin-top: 15px;
+}
+
+#searchBar {
+    font-size: 1rem;
+    background-color: white; /* Fond blanc */
+    color: black; /* Texte noir pour la visibilité */
+    border: 1px solid #ccc; /* Ajoute une bordure légère */
+    border-radius: 4px; /* Coins arrondis pour un style moderne */
+    padding: 3px; /* Espacement interne pour plus de confort */
+    width: 70%; /* Prendre toute la largeur du conteneur parent */
+    box-sizing: border-box; /* Inclure le padding dans la largeur totale */}
+    
+.searchResult {
+    color: black;
+}    
+
+.rechercher {
+/* Style pour le bouton de recherche */
+    background-color: #d3d3d3; /* Fond gris clair */
+    color: black; /* Texte noir */
+    font-size: 0.9rem; /* Texte plus petit */
+    padding: 5px 10px; /* Réduction de l'espacement interne */
+    border: 1px solid #ccc; /* Bordure grise subtile */
+    border-radius: 4px; /* Coins légèrement arrondis */
+    cursor: pointer; /* Curseur en forme de main pour indiquer qu'il est cliquable */
+    transition: background-color 0.3s ease; /* Effet de transition sur le fond */
+  }
+  
+  /* Effet au survol */
+  button:hover {
+    background-color: #b3b3b3; /* Fond gris légèrement plus foncé */
+  }
+  

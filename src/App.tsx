@@ -9,6 +9,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Connexion from './components/Connexion'
 import Results from './components/Results'
+import Recherches from './components/Recherches'
 
 
 const App: React.FC = () =>{
@@ -22,6 +23,7 @@ const App: React.FC = () =>{
         <Route path="/about" element={<About />} />
         <Route path="/connexion" element={<Connexion />} />
         <Route path="/results" element={<Results />} />
+        <Route path="/recherches" element={<Recherches />} />
         </Routes>
       </div>
     </Router>

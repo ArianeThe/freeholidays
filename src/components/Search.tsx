@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../assets/css/Search.css";
 
+
+
+//TODO : mettre en place la recherche avec plusieurs critères cfnotepad +
+
+
 const Search: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const navigate = useNavigate();

@@ -36,11 +36,14 @@ function Navbar() {
                     <NavLink to='/' onClick={closeMenu}>
                     Accueil</NavLink>
 
-                    <NavLink to='/about' onClick={closeMenu}>
-                    A propos</NavLink>
+                    <NavLink to='/recherches' onClick={closeMenu}>
+                    Recherches</NavLink>
 
                     <NavLink to='/connexion' onClick={closeMenu}>
                     Connexion</NavLink>
+
+                    <NavLink to='/about' onClick={closeMenu}>
+                    A propos</NavLink>
                 </div>
             
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Search from './Search';
+
 import '../assets/css/Home.css'
 
 const Home: React.FC = () => {
@@ -8,7 +8,6 @@ const Home: React.FC = () => {
     <div className='home'>
       <h2 className='title'>Bienvenu-e </h2>
 
-<Search/>
 
       <p className='texte'>Bienvenu-e sur LE site qui te permettre de trouver la location pour tes vacances, sans avoir à te soucier des détails.
       </p>

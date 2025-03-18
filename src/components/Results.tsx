@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import "../assets/css/Results.css"
 
 interface Post {
   id: number;
@@ -36,7 +37,7 @@ const Results: React.FC = () => {
 
   return (
     <div className="searchResults">
-      <h2>Résultats pour : "{query}"</h2>
+      <h2 className="titre"> "{query}"</h2>
       {filteredDatas.length > 0 ? (
         filteredDatas.map((data) => (
           <div className="searchResult" key={data.id}>

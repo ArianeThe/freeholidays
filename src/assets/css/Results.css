@@ -1,3 +1,19 @@
 .searchResults {
-    margin-top: 300px;
+    margin-top: 100px;
+    width: 100%;
 }
+
+.titre{
+    color: black;
+    font-family: fantasy;
+}
+
+.searchResult {
+border: 1px solid #ccc;
+border-radius: 4px;
+padding: 3px;
+background-color: #faf0e7;
+
+}
+
+    

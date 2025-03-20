@@ -1,0 +1,57 @@
+.header {
+    position: fixed; /* Rendre le header fixe */
+    top: 30;
+    left: 0;
+    width: 90%;
+    max-width: 375px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #ffdab9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* S'assurer que le header reste au-dessus des autres éléments */
+    left: 50%; /* Centrer horizontalement */
+  transform: translateX(-50%);
+  border-radius: 8px;
+  }
+  
+  .logo img {
+    height: 60px;
+  }
+  
+  .title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 0.5em; /* Ajuster la taille du texte si nécessaire */
+    color: black;
+  }
+  
+  .menu-burger {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Styles spécifiques pour les écrans de téléphone */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%; 
+    }
+  
+    .logo img {
+      height: 30px;
+    }
+  
+    .title {
+      font-size: 0.5em;
+    }
+  
+    .menu-burger {
+      font-size: 2em;
+      padding: 1em;
+      align-self: flex-end;
+    }
+  }
+  

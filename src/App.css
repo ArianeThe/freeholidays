@@ -2,6 +2,12 @@
 
 body {
   background-color: #ffdab9; /* Arrière-plan couleur saumon clair */
+
+  background-image: url('./assets/images/fond.svg');
+  background-size: cover; /* Adapter l'image à l'écran */
+  background-position: center; /* Centrer l'image */
+  background-repeat: no-repeat; 
+  
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;

@@ -2,14 +2,13 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "../assets/css/Results.css"
 
-interface Post {
-  id: number;
-  title: string;
-  body: string;
+interface Hebergement {
+  id_auto: number;
+  nom: string;
 }
 
 const Results: React.FC = () => {
-  const [datas, setDatas] = useState<Post[]>([]);
+  const [datas, setDatas] = useState<Hebergement[]>([]);
   const location = useLocation();
 
   // Extraire les paramètres de l'URL
@@ -17,7 +16,7 @@ const Results: React.FC = () => {
 
   useEffect(() => {
     // Appeler l'API et récupérer les données
-    fetch("https://jsonplaceholder.typicode.com/posts")
+    fetch("http://localhost:8082/api/v1/Entities/Hebergement")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -32,7 +31,7 @@ const Results: React.FC = () => {
 
   // Filtrer les données en fonction de la requête
   const filteredDatas = datas.filter((data) =>
-    data.title.toLowerCase().includes(query?.toLowerCase() || "")
+    data.nom.toLowerCase().includes(query?.toLowerCase() || "")
   );
 
   return (
@@ -40,8 +39,8 @@ const Results: React.FC = () => {
       <h2 className="titre"> "{query}"</h2>
       {filteredDatas.length > 0 ? (
         filteredDatas.map((data) => (
-          <div className="searchResult" key={data.id}>
-            {data.title}
+          <div className="searchResult" key={data.id_auto}>
+            {data.nom}
           </div>
         ))
       ) : (
